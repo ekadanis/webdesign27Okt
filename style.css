@@ -39,21 +39,36 @@ header .overlay {
   background-color: rgba(0, 0, 0, 0.45);
 }
 
-header h1 {
+header  #profile-content {
+  display : flex;
+  justify-content : center;
+  flex-direction : column;
+  align-items : center;
+  height : 100%;
+  
+}
+
+header #profile-content img {
+    width : 250px;
+    height : 250px;
+    object-fit : center;
+    margin-bottom : 50px;
+    border-radius : 100%;
+    
+}
+  
+header  #profile-content h1{
+  margin : 0;
   font-size: 36px;
   color: #fff;
-  position: absolute;
-  top: 50%;
-  z-index: 1;
+  
   width: 100%;
 }
 
-header h2 {
+header  #profile-content h2 {
   font-size: 24px;
   color: #fff;
-  position: absolute;
-  top: 60%;
-  z-index: 1;
+
   width: 100%;
   margin-top: 40px;
 }
@@ -86,6 +101,20 @@ header h2 {
 
 .about-me p {
   font-style: italic;
+}
+
+#project {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  
+}
+      
+#project .project-card {
+  flex: 1;
+  paddling: 20px 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 footer {
